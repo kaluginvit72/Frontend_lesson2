@@ -1,136 +1,97 @@
-/* Главная (фрейм «1» в Figma): фон, высота контейнера героя, блок main и контент слева/справа */
-
-body {
-  background-color: #fdfdfd;
-}
-
 .container {
-  min-height: 1027px;
-}
-
-/* Тень шапки на главной по фрейму «1» (отличается от экранов «2»–«4»). */
-.header {
-  box-shadow: 0 7px 20px 0 rgba(122, 120, 120, 0.18);
+    overflow: hidden;
+    min-height: 100vh;
 }
 
 .main {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  padding-left: 29px;
-  margin-top: 20px;
+    padding: 111px 40px 40px;
+    position: relative;
+    display: flex;
 }
 
 .main-info {
-  position: relative;
-  flex: 0 1 850px;
-  min-width: 0;
-  padding-top: 99px;
-  overflow: visible;
+    max-width: 840px;
+    width: 100%;
+    position: relative;
 }
 
 .main-title {
-  position: relative;
-  z-index: 1;
-  margin: 0 0 15px;
-  font-weight: 700;
-  font-size: 200px;
-  line-height: 1;
-  letter-spacing: -10px;
-  color: #111111;
-  white-space: nowrap;
+    margin-top: 98px;
+    font-weight: 500;
+    font-size: 200px;
+    line-height: 1;
+    letter-spacing: -0.05em;
+    color: #111111;
+    left: -15px;
+    position: relative;
 }
 
-.main-title-letter {
-  font-weight: 500;
-  letter-spacing: -0.8px;
-  color: #ffcc00;
+.main-title span {
+    color: #ffcc00;
 }
 
-.main-title-name {
-  font-weight: 700;
-  color: #111111;
+.main-features {
+    margin-top: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
 }
 
-.main-tags {
-  position: relative;
-  z-index: 1;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-  margin-top: 15px;
-  margin-bottom: 50px;
-}
-
-.main-tag {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  padding: 12px 14px;
-  border: 1px solid #ffffff;
-  border-radius: 10px;
-  background-color: #111111;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.1;
-  color: #ffffff;
-  white-space: nowrap;
+.main-feature {
+    background: #111111;
+    color: #ffffff;
+    padding: 12px 14px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.1;
+    border-radius: 10px;
 }
 
 .main-description {
-  position: relative;
-  z-index: 1;
-  max-width: 500px;
-  margin: 0 0 50px;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 1.0009;
-  color: #111111;
+    margin-top: 50px;
+    max-width: 500px;
+    font-size: 20px;
+    line-height: 1.1;
+    color: #111111;
 }
 
 .main-actions {
-  position: relative;
-  z-index: 1;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  width: 433px;
-  max-width: 100%;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
-.main-actions .btn {
-  width: 100%;
-  min-height: 80px;
-  padding: 14px 6px;
-  font-size: 18px;
+.main-actions .button {
+    height: 80px;
+    width: 433px;
+    font-size: 18px;
+    font-weight: bold;
+    place-items: center;
+    display: grid;
 }
 
-.main-watermark {
-  position: absolute;
-  left: -83px;
-  bottom: -180px;
-  z-index: 0;
-  margin: 0;
-  font-weight: 500;
-  font-size: 278px;
-  line-height: 1;
-  letter-spacing: -13.9px;
-  color: rgba(236, 237, 240, 0.3);
-  white-space: nowrap;
-  pointer-events: none;
+.main-title-ghost {
+    position: absolute;
+    z-index: -1;
+    left: -70px;
+    bottom: -150px;
+    font-weight: 500;
+    font-size: 278px;
+    line-height: 1;
+    letter-spacing: -0.05em;
+    color: #ECEDF04D;
 }
 
 .main-image {
-  flex-shrink: 0;
-  width: 1024px;
-  height: 896px;
-  margin-top: 21px;
+    width: 1024px;
+    top: 100px;
+    z-index: -2;
 }
 
 .main-image img {
-  display: block;
-  width: 1024px;
-  height: 896px;
-  max-width: none;
-  object-fit: cover;
+    width: 100%;
+    max-width: 1024px;
+    height: auto;
+    display: block;
 }

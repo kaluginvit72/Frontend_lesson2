@@ -1,134 +1,98 @@
-/* Адаптив главной: main, заголовок, преимущества, описание, кнопки героя, изображение, декоративный текст. */
+@media (max-width: 1760px) {
+    .main-title {
+        font-size: 150px;
+        left: -7px;
+    }
 
-@media (max-width: 1800px) {
-  .main {
-    flex-direction: column;
-    align-items: stretch;
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-
-  .main-info {
-    flex: 1 1 auto;
-    max-width: 100%;
-    padding-top: 72px;
-  }
-
-  .main-title {
-    font-size: clamp(80px, 12vw, 200px);
-    letter-spacing: -0.04em;
-    white-space: normal;
-  }
-
-  .main-image {
-    width: 100%;
-    max-width: 1024px;
-    height: auto;
-    margin-top: 32px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .main-image img {
-    width: 100%;
-    height: auto;
-    max-width: 100%;
-    max-height: 896px;
-    object-fit: contain;
-  }
-
-  .main-watermark {
-    left: max(-83px, -12vw);
-    bottom: -120px;
-    font-size: clamp(100px, 18vw, 278px);
-    letter-spacing: -0.04em;
-  }
+    .main-info {
+        max-width: 640px;
+    }
 }
 
-@media (max-width: 992px) {
-  .main {
-    margin-top: 16px;
-    padding-left: 12px;
-    padding-right: 12px;
-  }
+@media (max-width: 1200px) {
+    .main-info {
+        max-width: 540px;
+    }
 
-  .main-info {
-    padding-top: 48px;
-  }
+    .main {
+        padding: 111px 20px 20px;
+    }
 
-  .main-title {
-    font-size: clamp(56px, 14vw, 160px);
-    margin-bottom: 12px;
-  }
+    .main-title {
+        font-size: 120px;
+        left: -4px;
+    }
 
-  .main-tags {
-    margin-bottom: 32px;
-  }
-
-  .main-tag {
-    padding: 10px 12px;
-    font-size: 13px;
-    white-space: normal;
-  }
-
-  .main-description {
-    max-width: 100%;
-    margin-bottom: 32px;
-    font-size: 18px;
-  }
-
-  .main-actions {
-    width: 100%;
-    gap: 16px;
-  }
-
-  .main-watermark {
-    bottom: -80px;
-    font-size: clamp(72px, 22vw, 200px);
-  }
+    .main-title-ghost {
+        font-size: 220px;
+    }
 }
 
-@media (max-width: 576px) {
-  .main {
-    padding-left: 0;
-    padding-right: 0;
-  }
+@media (max-width: 1024px) {
+    .main-title {
+        margin-top: 30px;
+    }
 
-  .main-info {
-    padding-top: 32px;
-  }
+    .main {
+        flex-direction: column-reverse;
+    }
 
-  .main-title {
-    font-size: clamp(42px, 12vw, 120px);
-  }
+    .main-image {
+        max-width: 350px;
+        position: absolute;
+        left: 370px;
+        top: 370px;
+    }
 
-  .main-tags {
-    gap: 8px;
-  }
+    .main-info {
+        max-width: 100%;
+    }
 
-  .main-description {
-    font-size: 16px;
-    line-height: 1.25;
-  }
+    .main-actions {
+        gap: 10px;
+    }
 
-  .main-actions .btn {
-    min-height: 64px;
-    padding: 12px 6px;
-    font-size: 16px;
-    width: 100%;
-  }
+    .main-actions .button {
+        height: 50px;
+        font-size: 14px;
+        width: auto;
+        max-width: 300px;
+    }
 
-  .main-watermark {
-    left: -16px;
-    bottom: -48px;
-    font-size: clamp(48px, 20vw, 120px);
-  }
+    .main-description {
+        max-width: 350px;
+    }
+}
 
-  .main-image {
-    margin-top: 24px;
-  }
+@media (max-width: 570px) {
+    .main-title {
+        font-size: 88px;
+    }
 
-  .main-image img {
-    max-height: none;
-  }
+    .main-description {
+        max-width: 100%
+    }
+
+    .main-actions {
+       width: 100%;
+    }
+
+    .main-actions .button {
+        width: 100%;
+        max-width: 100%
+    }
+
+    .main-image {
+        max-width: 650px;
+        position: absolute;
+        left: 170px;
+        top: 70px;
+        opacity: 0.2;
+    }
+}
+
+@media (max-width: 400px) {
+    .main-title {
+        font-size: 70px;
+    }
 }

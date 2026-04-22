@@ -1,88 +1,32 @@
-/* Общие адаптивные стили: контейнер, шапка, логотип, меню (как на всех страницах макета). */
+@media (max-width: 767px) {
+    .header {
+        left: 10px;
+        right: 10px;
+        top: 10px;
+    }
 
-@media (max-width: 1400px) {
-  .menu-list {
-    gap: 40px;
-  }
+    .header-link span {
+        display: none;
+    }
+
+    .header-menu {
+        gap: 20px;
+        justify-content: flex-start;
+        margin: 0 0 0 30px;
+        position: static;
+        transform: none;
+    }
 }
 
-@media (max-width: 1100px) {
-  .header {
-    height: auto;
-    min-height: 70px;
-    padding: 12px 16px 16px;
-  }
-
-  .logo {
-    position: relative;
-    left: auto;
-    top: auto;
-  }
-
-  .menu {
-    position: relative;
-    left: auto;
-    top: auto;
-    transform: none;
-    width: 100%;
-    margin-top: 12px;
-  }
-
-  .menu-list {
-    justify-content: center;
-    gap: 32px;
-    flex-wrap: wrap;
-  }
+@media (max-width: 420px) {
+    .header-title {
+        display: none;
+    }
 }
 
-@media (max-width: 992px) {
-  .container {
-    min-height: auto;
-    padding: 16px;
-  }
-
-  .menu-list {
-    gap: 24px;
-  }
-
-  .menu-link {
-    font-size: 13px;
-  }
-}
-
-@media (max-width: 576px) {
-  .container {
-    padding: 12px;
-  }
-
-  .header {
-    padding: 10px 12px 14px;
-    border-radius: 14px;
-  }
-
-  .logo-mark {
-    width: 38px;
-    height: 38px;
-    font-size: 15px;
-  }
-
-  .logo-text {
-    font-size: 18px;
-  }
-
-  .menu {
-    margin-top: 10px;
-  }
-
-  .menu-list {
-    flex-direction: column;
-    gap: 10px;
-    align-items: center;
-  }
-
-  .menu-link {
-    font-size: 14px;
-    white-space: normal;
-    text-align: center;
-  }
+@media (max-width: 374px) {
+    .header-menu {
+        gap: 10px;
+        margin: 0 0 0 10px;
+    }
 }
