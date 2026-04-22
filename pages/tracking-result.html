@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Статус посылки — Dostaffkin</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../styles/base.css">
+  <link rel="stylesheet" href="../styles/base_adaptive.css">
+  <link rel="stylesheet" href="../styles/tracking-result.css">
+  <link rel="stylesheet" href="../styles/tracking-result_adaptive.css">
+</head>
+<body class="page-tracking-result">
+  <div class="container container--tracking-result">
+    <header class="header">
+      <a class="logo" href="../index.html">
+        <div class="logo-mark">D</div>
+        <span class="logo-text">Dostaffkin</span>
+      </a>
+      <nav class="menu">
+        <ul class="menu-list">
+          <li class="menu-item">
+            <a class="menu-link" href="order.html">Оформить доставку</a>
+          </li>
+          <li class="menu-item">
+            <a class="menu-link" href="tracking.html">Отследить посылку</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="main main-tracking-result">
+      <div class="tracking-result-bg" aria-hidden="true">
+        <img src="../images/tracking-result-bg.png" alt="">
+      </div>
+      <section class="tracking-panel tracking-panel--form aside-panel">
+        <div class="tracking-panel__head">
+          <h1 class="tracking-panel__title">Отследить посылку</h1>
+        </div>
+        <div class="tracking-panel__divider" role="presentation"></div>
+        <div class="tracking-panel__body">
+          <input class="tracking-input" type="text" value="10211833519" readonly>
+          <a class="btn btn-primary tracking-submit" href="tracking-result.html">Отследить</a>
+        </div>
+      </section>
+      <section class="tracking-detail aside-panel">
+        <div class="tracking-detail__head">
+          <h2 class="tracking-detail__number">№10211833519</h2>
+          <div class="tracking-route">
+            <img class="tracking-route__icon" src="../images/track-pin-from.png" alt="">
+            <p class="tracking-route__text">Откуда: Москва, улица Арбат, 1</p>
+          </div>
+          <img class="tracking-route__arrow" src="../images/track-arrow.png" alt="" role="presentation">
+          <div class="tracking-route">
+            <img class="tracking-route__icon" src="../images/track-pin-to.png" alt="">
+            <p class="tracking-route__text">Куда: Минск, проспект Независимости, 58</p>
+          </div>
+        </div>
+        <div class="tracking-panel__divider" role="presentation"></div>
+        <div class="tracking-detail__body">
+          <h3 class="tracking-status-title">Статус данной посылки:</h3>
+          <ul class="tracking-status-list">
+            <li class="tracking-status-row">
+              <div class="tracking-status-row__icon">
+                <img src="../images/track-status-1.png" alt="">
+                <img class="tracking-status-row__glyph" src="../images/track-icon-clipboard.png" alt="">
+              </div>
+              <span class="tracking-status-row__label">Создан</span>
+              <span class="tracking-status-row__date">10.01.2026</span>
+            </li>
+            <li class="tracking-status-row">
+              <div class="tracking-status-row__icon">
+                <img src="../images/track-status-2.png" alt="">
+                <img class="tracking-status-row__glyph" src="../images/track-icon-shipment.png" alt="">
+              </div>
+              <span class="tracking-status-row__label">В пути</span>
+              <span class="tracking-status-row__date">18.01.2026</span>
+            </li>
+            <li class="tracking-status-row">
+              <div class="tracking-status-row__icon">
+                <img src="../images/track-status-3.png" alt="">
+                <img class="tracking-status-row__glyph" src="../images/track-icon-home.png" alt="">
+              </div>
+              <span class="tracking-status-row__label">Готов к выдаче</span>
+              <span class="tracking-status-row__date">25.01.2026</span>
+            </li>
+            <li class="tracking-status-row">
+              <div class="tracking-status-row__icon">
+                <img src="../images/track-status-4.png" alt="">
+                <img class="tracking-status-row__glyph tracking-status-row__glyph--check" src="../images/track-icon-check.png" alt="">
+              </div>
+              <span class="tracking-status-row__label">Вручен</span>
+              <span class="tracking-status-row__date">27.01.2026</span>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+  </div>
+</body>
+</html>

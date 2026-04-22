@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Оформление доставки — Dostaffkin</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../styles/base.css">
+  <link rel="stylesheet" href="../styles/base_adaptive.css">
+  <link rel="stylesheet" href="../styles/order.css">
+  <link rel="stylesheet" href="../styles/order_adaptive.css">
+</head>
+<body class="page-order">
+  <div class="container container--order">
+    <div class="order-map" aria-hidden="true">
+      <img src="../images/order-map-bg.png" alt="">
+    </div>
+    <header class="header">
+      <a class="logo" href="../index.html">
+        <div class="logo-mark">D</div>
+        <span class="logo-text">Dostaffkin</span>
+      </a>
+      <nav class="menu">
+        <ul class="menu-list">
+          <li class="menu-item">
+            <a class="menu-link" href="order.html">Оформить доставку</a>
+          </li>
+          <li class="menu-item">
+            <a class="menu-link" href="tracking.html">Отследить посылку</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="main main-order">
+      <aside class="order-aside aside-panel">
+        <div class="order-aside__head">
+          <h1 class="order-aside__title">Оформление доставки</h1>
+          <p class="order-aside__subtitle">Выберите параметры для расчета отправления</p>
+        </div>
+        <div class="order-aside__body">
+          <section class="order-section">
+            <h2 class="order-label">Маршрут</h2>
+            <div class="order-field">
+              <span class="order-field__dot order-field__dot--from" aria-hidden="true"></span>
+              <input class="order-input" type="text" placeholder="Откуда: начните вводить адрес" autocomplete="off">
+            </div>
+            <div class="order-field">
+              <span class="order-field__dot order-field__dot--to" aria-hidden="true"></span>
+              <input class="order-input" type="text" placeholder="Куда: начните вводить адрес" autocomplete="off">
+            </div>
+          </section>
+          <section class="order-section">
+            <h2 class="order-label">Размер посылки</h2>
+            <div class="order-carts">
+              <div class="order-cart">
+                <div class="order-cart__top">
+                  <span class="order-cart__name">XS</span>
+                  <span class="order-cart__price">9 ₽/км</span>
+                </div>
+                <div class="order-cart__pic"><img src="../images/order-parcel-xs.png" alt=""></div>
+                <p class="order-cart__note">17×12×9 см,<br>до 0.5 кг</p>
+              </div>
+              <div class="order-cart order-cart--active">
+                <div class="order-cart__top">
+                  <span class="order-cart__name">S</span>
+                  <span class="order-cart__price">13 ₽/км</span>
+                </div>
+                <div class="order-cart__pic"><img src="../images/order-parcel-s.png" alt=""></div>
+                <p class="order-cart__note">23×19×10 см, до 2 кг</p>
+              </div>
+              <div class="order-cart">
+                <div class="order-cart__top">
+                  <span class="order-cart__name">M</span>
+                  <span class="order-cart__price">20 ₽/км</span>
+                </div>
+                <div class="order-cart__pic"><img src="../images/order-parcel-m.png" alt=""></div>
+                <p class="order-cart__note">33×25×15 см, до 5 кг</p>
+              </div>
+              <div class="order-cart">
+                <div class="order-cart__top">
+                  <span class="order-cart__name">L</span>
+                  <span class="order-cart__price">27 ₽/км</span>
+                </div>
+                <div class="order-cart__pic"><img src="../images/order-parcel-l.png" alt=""></div>
+                <p class="order-cart__note">31×25×38 см, до 12 кг</p>
+              </div>
+              <div class="order-cart">
+                <div class="order-cart__top">
+                  <span class="order-cart__name">XL</span>
+                  <span class="order-cart__price">35 ₽/км</span>
+                </div>
+                <div class="order-cart__pic"><img src="../images/order-parcel-xl.png" alt=""></div>
+                <p class="order-cart__note">60×35×30 см, до 18 кг</p>
+              </div>
+              <div class="order-cart">
+                <div class="order-cart__top">
+                  <span class="order-cart__name">MAX</span>
+                  <span class="order-cart__price">70 ₽/км</span>
+                </div>
+                <div class="order-cart__pic"><img src="../images/order-parcel-max.png" alt=""></div>
+                <p class="order-cart__note">120×120×80 см,<br>до 200 кг</p>
+              </div>
+            </div>
+          </section>
+          <button class="btn btn-primary order-btn-calc" type="button">Рассчитать</button>
+          <section class="order-results">
+            <h2 class="order-results__title">Расчеты вашего заказа</h2>
+            <dl class="order-results__list">
+              <div class="order-results__row">
+                <dt>Расстояние</dt>
+                <dd>730.2 км</dd>
+              </div>
+              <div class="order-results__row">
+                <dt>Доставим через</dt>
+                <dd>11 дней</dd>
+              </div>
+              <div class="order-results__row">
+                <dt>Тариф</dt>
+                <dd>13 ₽/км</dd>
+              </div>
+            </dl>
+            <div class="order-results__total">
+              <span class="order-results__total-label">Итого</span>
+              <p class="order-results__total-value">6 572 <span>₽</span></p>
+            </div>
+          </section>
+          <section class="order-form-block">
+            <h2 class="order-form-block__title">Оформление доставки</h2>
+            <p class="order-label order-label--in-block">Контакты</p>
+            <div class="order-form-row">
+              <input class="order-input order-input--half" type="text" placeholder="Ваше имя">
+              <input class="order-input order-input--half" type="tel" placeholder="Ваш телефон">
+            </div>
+            <p class="order-label order-label--in-block order-label--spaced">Дополнительная информация</p>
+            <div class="order-textarea-wrap">
+              <textarea class="order-textarea" rows="3" placeholder="Детали доставки и комментарий"></textarea>
+            </div>
+            <button class="btn btn-primary order-btn-submit" type="button">Отправить заявку</button>
+          </section>
+        </div>
+      </aside>
+    </main>
+  </div>
+</body>
+</html>

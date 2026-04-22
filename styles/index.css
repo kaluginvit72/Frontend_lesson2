@@ -1,0 +1,136 @@
+/* Главная (фрейм «1» в Figma): фон, высота контейнера героя, блок main и контент слева/справа */
+
+body {
+  background-color: #fdfdfd;
+}
+
+.container {
+  min-height: 1027px;
+}
+
+/* Тень шапки на главной по фрейму «1» (отличается от экранов «2»–«4»). */
+.header {
+  box-shadow: 0 7px 20px 0 rgba(122, 120, 120, 0.18);
+}
+
+.main {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding-left: 29px;
+  margin-top: 20px;
+}
+
+.main-info {
+  position: relative;
+  flex: 0 1 850px;
+  min-width: 0;
+  padding-top: 99px;
+  overflow: visible;
+}
+
+.main-title {
+  position: relative;
+  z-index: 1;
+  margin: 0 0 15px;
+  font-weight: 700;
+  font-size: 200px;
+  line-height: 1;
+  letter-spacing: -10px;
+  color: #111111;
+  white-space: nowrap;
+}
+
+.main-title-letter {
+  font-weight: 500;
+  letter-spacing: -0.8px;
+  color: #ffcc00;
+}
+
+.main-title-name {
+  font-weight: 700;
+  color: #111111;
+}
+
+.main-tags {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 15px;
+  margin-bottom: 50px;
+}
+
+.main-tag {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 14px;
+  border: 1px solid #ffffff;
+  border-radius: 10px;
+  background-color: #111111;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.1;
+  color: #ffffff;
+  white-space: nowrap;
+}
+
+.main-description {
+  position: relative;
+  z-index: 1;
+  max-width: 500px;
+  margin: 0 0 50px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.0009;
+  color: #111111;
+}
+
+.main-actions {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 433px;
+  max-width: 100%;
+}
+
+.main-actions .btn {
+  width: 100%;
+  min-height: 80px;
+  padding: 14px 6px;
+  font-size: 18px;
+}
+
+.main-watermark {
+  position: absolute;
+  left: -83px;
+  bottom: -180px;
+  z-index: 0;
+  margin: 0;
+  font-weight: 500;
+  font-size: 278px;
+  line-height: 1;
+  letter-spacing: -13.9px;
+  color: rgba(236, 237, 240, 0.3);
+  white-space: nowrap;
+  pointer-events: none;
+}
+
+.main-image {
+  flex-shrink: 0;
+  width: 1024px;
+  height: 896px;
+  margin-top: 21px;
+}
+
+.main-image img {
+  display: block;
+  width: 1024px;
+  height: 896px;
+  max-width: none;
+  object-fit: cover;
+}
